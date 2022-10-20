@@ -1,0 +1,152 @@
+/*
+Nytt project, föregående projekt var utan flexbox, för att göra en "sammanfattning" av koden/genväg, använd flexbox commandon.
+Istället för 100 divs, använd container och item.
+*/
+.container {
+    display: flex;
+    background-color: rgb(56, 44, 34);
+  }
+  
+  .item {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    height: 100px;
+    background-color: rgb(56, 44, 34);
+    
+    
+  }
+ 
+  .item + .item {
+    margin-left: 2%;
+  }
+
+
+
+  a:link {
+    color: rgb(226, 206, 186);
+    text-decoration: none;
+    margin: 30px;
+  }
+  
+  /* öppnad länk */
+  a:visited {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  
+  /* mus över länk */
+  .item:hover {
+    background-color: rgb(230, 200, 173);
+    
+  }
+  
+  /* vald länk */
+  a:active {
+    color: rgb(56, 44, 34);
+    text-decoration: underline;
+
+  }
+
+  body {
+     margin: 0%;
+    }
+
+/*
+    Felsteg; lade justify-content: center; under .content
+    Lösning; lade space around för att få alla items centrerade.
+
+*/
+
+.content{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    justify-content: space-around;
+   
+    
+}
+.content-img{
+    display: flex;
+    justify-content: center;
+
+}
+.content-paragraph-left{
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  width: 200px;
+ 
+}
+.content-paragraph-right{
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  width: 200px;
+ 
+}
+
+
+.h1-p{
+  text-align: center;
+  margin: 100px;
+}
+
+.container-1{
+
+  display: flex;
+  justify-content:flex-start;
+  background-color: white;
+  margin-top: 150px;
+
+
+}
+
+.box{
+
+  display: flex;
+  
+  flex-grow: 1;
+  background-color: rgb(255, 255, 255);
+  
+  
+
+}
+.box + .box {
+  margin-left: 2%;
+}
+
+.content-about{
+  text-align: center;
+  margin: 100px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+p{
+  font-size: 20px;
+}
+
+.content-contact{
+  display: flex;
+  
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.contact-h1{
+  margin: 250px;
+  color: rgb(56, 44, 34);
+}
+
+.contact-p{
+  margin: 200px;
+  color: rgb(194, 168, 145);
+}
+
+.contact-h1 + .contact-p{
+  margin-left: 1px;
+}
+
+button{
+  background-color: rgb(194, 168, 145);
+}
+
+
+
